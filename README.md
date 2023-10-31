@@ -67,7 +67,7 @@ python main.py --PATTERN TEST --DATASETS HAPT Opportunity --CLASSIFIERS TSF_torc
 
 ## Results: 
 
-![Results](Figs\Results.jpg)
+![Results](Figs/Results.jpg)
 
 ## Contact:
 
