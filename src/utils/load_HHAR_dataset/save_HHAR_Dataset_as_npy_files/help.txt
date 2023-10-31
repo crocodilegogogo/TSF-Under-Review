@@ -1,0 +1,7 @@
+The code for reading HHAR dataset is borrowed from the open sourse of article 'Deepsense: A unified deep learning framework for time-series mobile sensing data processing'.
+Step 1: put the downloaded dataset into the current folder
+Step 2: run dataAli-sameUserDevice.py :              transform folder Activity recognition exp to folder Dataset_Alg_SourceDevice
+Step 3: run pairDataFile.py :                        transform folder Dataset_Alg_SourceDevice to file Dataset_AccGry_SourceDevice-Creation_Time-avgTime or folder Dataset_AccGry_SourceDevice-Creation_Time-avgTime_Phone
+Step 4: run sav_HHAR_data_phone_to_npy.py :          transform folder Dataset_AccGry_SourceDevice-Creation_Time-avgTime or folder Dataset_AccGry_SourceDevice-Creation_Time-avgTime_Phone 
+                                                            to folder Per_subject_device_gt_npy
+Step 5: run sav_HHAR_data_phone_to_subjects_npy.py : transform folder Per_subject_device_gt_npy to folder Per_subject_npy
