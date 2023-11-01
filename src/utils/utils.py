@@ -480,7 +480,7 @@ def training_process(logger, subject_id, X_tr, X_val, X_test, Y_tr, Y_val,
                                             skiprows=1, nrows=1, header = None)[1][0]
         log_training_duration.append(per_training_duration)
         
-    return history, per_training_duration, log_training_duration, output_directory_models
+    return per_training_duration, log_training_duration, output_directory_models
 
 class LabelSmoothingCrossEntropy(nn.Module):
     def __init__(self):
@@ -1231,7 +1231,7 @@ def training_process_fold(logger, fold_id, X_tr, X_val, X_test, Y_tr, Y_val,
         per_training_duration = pd.read_csv(os.path.join(output_directory_models, 'score.csv'),
                                             skiprows=1, nrows=1, header = None)[1][0]
         log_training_duration.append(per_training_duration)
-    return history, per_training_duration, log_training_duration, output_directory_models
+    return per_training_duration, log_training_duration, output_directory_models
 
 def save_metrics_per_fold(score, per_training_duration,
                         fold_id, nb_classes, LABELS,

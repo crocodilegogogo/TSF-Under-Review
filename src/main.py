@@ -78,7 +78,7 @@ class Train_Test(object):
                                                                                                    BATCH_SIZE, args.INFERENCE_DEVICE, args.test_split)
                         
                         ###### TRAIN FOR EACH SUBJECT (if have already finished training, print 'Already_done') ######
-                        history, per_training_duration, log_training_duration, output_directory_models = training_process(
+                        per_training_duration, log_training_duration, output_directory_models = training_process(
                                                                                                    logger, subject_id, X_tr, X_val, X_test, Y_tr, Y_val,
                                                                                                    y_test, nb_classes, classifier_parameter, classifier,
                                                                                                    classifier_func, MODEL_DIR, args.PATTERN, EPOCH, BATCH_SIZE, LR,
@@ -144,7 +144,7 @@ class Train_Test(object):
                                                                                                    X_test.shape[0], nb_classes, STFT_intervals,
                                                                                                    BATCH_SIZE, args.INFERENCE_DEVICE, args.test_split)
                         ###### TRAIN FOR EACH FOLD (if have already finished training, print 'Already_done') ######
-                        history, per_training_duration, log_training_duration, output_directory_models = training_process_fold(
+                        per_training_duration, log_training_duration, output_directory_models = training_process_fold(
                                                                                                    logger, fold_id, X_tr, X_val, X_test, Y_tr, Y_val,
                                                                                                    y_test, nb_classes, classifier_parameter, classifier,
                                                                                                    classifier_func, MODEL_DIR, args.PATTERN, EPOCH, BATCH_SIZE, LR,
