@@ -84,7 +84,7 @@ class AttnSense(nn.Module):
         
         self.merge_dropout = nn.Dropout(drop_rate)
         
-        if self.datasetname in ['SHL_2018','HHAR','MobiAct']:
+        if self.datasetname in ['SHL_2018','HHAR','MobiAct','SHO']:
             attn_mul = 4
         elif self.datasetname in ['DSADS']:
             attn_mul = 1
@@ -96,7 +96,7 @@ class AttnSense(nn.Module):
             nn.Tanh()
             )
         
-        if self.datasetname in ['SHL_2018','HHAR','MobiAct']:
+        if self.datasetname in ['SHL_2018','HHAR','MobiAct','SHO']:
             mul = 4
         elif self.datasetname in ['DSADS']:
             mul = 1

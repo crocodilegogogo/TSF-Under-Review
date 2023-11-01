@@ -810,7 +810,7 @@ def logging_settings(classifier_name, CUR_DIR, dataset_name):
     # Logging settings
     EXEC_TIME = classifier_name + "-" + datetime.now().strftime("%Y%m%d-%H%M%S")
     LOG_DIR = os.path.join(CUR_DIR, f"logs", dataset_name, classifier_name, f"{EXEC_TIME}")
-    MODEL_DIR = os.path.join(CUR_DIR, f"saved_model", dataset_name, classifier_name)
+    MODEL_DIR = os.path.join(CUR_DIR, f"saved_models", dataset_name, classifier_name)
     create_directory(LOG_DIR) # Create log directory
     
     # create log object with classifier_name
