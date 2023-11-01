@@ -24,7 +24,7 @@ This paper is an extension of our previous conference version [(paper link)](htt
 
 - The datasets used in this paper can be easily downloaded according to the links provided by corresponding articles. These links are also provided in the top parts of our data loading codes. 
 - Note that, to facilitate data loading, some datasets are transformed to '.npy' or '.csv' formats. Please run the format transformation code before data loading and preprocessing. 
-- **Data format transformation demo:** Run 'src/utils/load_Opportunity_dataset/save_Oppotunity_Dataset_as_csv_files/Save_Oppo_dataset_as_csv.py'. It can be observed that, a 'clean_opp.csv' file is generated in the 'dataset/Opportunity' folder.
+- **Demo for data format transformation:** Run 'src/utils/load_Opportunity_dataset/save_Oppotunity_Dataset_as_csv_files/Save_Oppo_dataset_as_csv.py'. It can be observed that, a 'clean_opp.csv' file is generated in the 'dataset/Opportunity' folder.
 - The code for data loading and preprocessing of each dataset are provided in the 'utils' folder.
 
 ## Train:
