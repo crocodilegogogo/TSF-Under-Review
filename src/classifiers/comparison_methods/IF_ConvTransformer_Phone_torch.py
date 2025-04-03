@@ -12,7 +12,7 @@ import time
 from utils.utils import *
 import os
 from torch.nn.utils import weight_norm
-from contiguous_params import ContiguousParams
+# from contiguous_params import ContiguousParams
 
 class PositionalEncoding(nn.Module):
     "Implement the PE function."
@@ -355,8 +355,10 @@ def train_op(network, EPOCH, BATCH_SIZE, LR,
     macro_f1_test_results       = []
     
     # prepare optimizer&scheduler&loss_function
-    parameters = ContiguousParams(network.parameters())
-    optimizer  = torch.optim.Adam(parameters.contiguous(),lr = LR)
+    # parameters = ContiguousParams(network.parameters())
+    # optimizer = torch.optim.Adam(parameters.contiguous(),lr = LR)
+    parameters = network.parameters()
+    optimizer = torch.optim.Adam(parameters,lr = LR)
     scheduler  = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'min', factor=0.5, 
                                                            patience=5,
                                                            min_lr=LR/10, verbose=True)
