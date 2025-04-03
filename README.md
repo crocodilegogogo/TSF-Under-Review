@@ -9,7 +9,7 @@ This paper is an extension of our previous conference version [(paper link)](htt
 
 - We design a modality node fusion block via the adaptive filtering mechanism in graph Fourier domain. This block fuses the homogeneous and heterogeneous  modality information, and thus performs multi-sensor  fusion more effectively than IF-ConvTransformer.
 
-- We construct a temporal information fusion block via  the adaptive wavelet frequency selection mechanism. This block effectively suppresses temporal redundan-  cies, which improves IF-ConvTransformer in terms of  context correlations and computation efficiency.
+- We construct a temporal information fusion block via  the adaptive wavelet frequency selection mechanism. This block effectively suppresses temporal redundancies, which improves IF-ConvTransformer in terms of  context correlations and computation efficiency.
 - We propose a Triple Spectral Fusion (TSF) framework  via specific filtering mechanisms in three spectral domains. Our TSF framework achieves state-of-the-art  performance on ten public HAR datasets.
 
 ## Preparation:
